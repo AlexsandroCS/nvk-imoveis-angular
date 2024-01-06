@@ -1,0 +1,36 @@
+.listing{
+  background-color: #ccc;
+  border-radius: 15px;
+  padding-bottom: 5px;
+}
+
+.listing-heading{
+  color: var(#1e1e1e);
+  padding: 10px 20px 0px 20px;
+}
+
+.listing-photo{
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.listing-location {
+  padding: 10px 20px 20px 10px;
+}
+
+.listing-location::before {
+  content: url("../../../assets/pin.svg");
+}
+
+section.listing a{
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(#1e1e1e);
+}
+
+section.listing a::after{
+  content: "\203A";
+  margin-left: 5px;
+}

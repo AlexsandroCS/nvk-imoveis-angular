@@ -1,0 +1,39 @@
+<article>
+  <img class="listing-photo" [src]="housingLocation?.photo" alt="Foto da casa {{housingLocation?.name}}" crossorigin>
+
+  <section class="listing-description">
+    <h2 class="listing-heading">{{housingLocation?.name}}</h2>
+    <p class="listing-location">{{housingLocation?.city}}, {{housingLocation?.state}}</p>
+  </section>
+
+  <section class="listing-feature">
+    <h2 class="section-heading">Detalhes da casa</h2>
+    <ul>
+      <li>Unidades disponíveis: {{housingLocation?.availableUnits}}</li>
+      <li>Local com wifi:
+        <span *ngIf="housingLocation?.wifi">Sim</span>
+        <span *ngIf="!housingLocation?.wifi">Não</span>
+      </li>
+      <li>Local com lavanderia:
+        <span *ngIf="housingLocation?.laundry">Sim</span>
+        <span *ngIf="!housingLocation?.laundry">Não</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="listing-apply">
+    <h2 class="section-heading">Cadastro para alugar casa</h2>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+      <label for="first-name">Nome</label>
+      <input id="first-name" type="text" formControlName="firstName"/>
+
+      <label for="last-name">Sobrenome</label>
+      <input id="last-name" type="text" formControlName="lastName"/>
+
+      <label for="email">E-mail</label>
+      <input id="email" type="text" formControlName="email"/>
+
+      <button type="submit" class="primary">Enviar cadastro</button>
+    </form>
+  </section>
+</article>

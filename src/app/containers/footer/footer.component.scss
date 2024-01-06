@@ -1,0 +1,25 @@
+footer{
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  width: auto;
+  color: #2e2d2d;
+  background-color: #ccc;
+  padding: 1%;
+  border-top: 1px solid #c1c1c1;
+}
+
+.info{
+  justify-self: start;
+  grid-column: 1;
+  font-weight: bolder;
+}
+
+.contact{
+  justify-self: end;
+  grid-column: 2;
+}
+
+.contact span{
+  font-weight: bold;
+}
