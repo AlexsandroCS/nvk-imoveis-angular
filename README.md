@@ -1,27 +1,19 @@
-# FirstApp
+# Projeto NVK Imóveis - Locação de imóveis.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+### Version
+Versão: Angular CLI 17.0.9
 
-## Development server
+### Development server
+Navegação: localhost:4200
+<br>
+Comando: ng s
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### JSon server
+Navegação: localhost:3000
+<br>
+comando: json-server --watch db.json
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Sobre o Projeto
+É um site sobre alugar imóveis em todo o Brasil. O projeto contém 2 páginas, onde a página principal está listado todos os possíveis locais para alugar, também conta com uma barra de pesquisa que filtra os resultados pelo nome da cidade.
+<br><br>
+Já a segunda página mostra as informações sobre o imóvel possível a ser alugado, nessa página conta com um envio de formulário caso seja um possível cliente, as informações que vão ser enviadas pelo formulário podem ser vista no console. 
